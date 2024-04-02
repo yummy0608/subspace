@@ -231,9 +231,35 @@ a. 首先配置data source, 选择prometheus:
 
 b. Import Grafana dashbord
 
-输入Grafana仪表板ID=20433，然后单击 “加载”:
+![image-9](images/image-9.png)
 
-<image src="images/image-2.png">
+导入模板文件，然后单击 “加载”:
+
+<image src="images/image-10.png">
+
+下载dashborad模板文件，import
+
+[subspace-grafana-ss.json](subspace-grafana-ss.json)
+
+和官方grafana比，增加了:
+
+b.1. 可以按机器和path（single_farm_index）分类展示.
+
+![image-5](images/image-5.png)
+
+![image-6](images/image-6.png)
+
+b.2 P盘饼图，有P盘的百分比展示
+
+![image-11](images/image-11.png)
+
+b.3 每个path的Plotting图增加P盘的百分比展示:
+
+![image-7](images/image-7.png)
+
+b.4 展示block reward结果(success,rejected,timeout):
+
+![image-8](images/image-8.png)
 
 如果页面一直没数据，则可以打开promeheus的web页面，看状态是否都正常（up）
 地址：http://主机ip:9090
